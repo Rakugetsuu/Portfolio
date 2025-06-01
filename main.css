@@ -256,12 +256,26 @@ article{
     max-width: 300px;
 }
 /*projet*/
-.init-img{
-    /*max-height: 600px;
-    margin-left: 500px;*/
-    display: block;
-    margin: 0 auto;
+/*.init-img{
+    max-height: 600px;
+    margin-left: 500px;    
+}*/
+.Projet init-rés{
+    display: flex;
+    justify-content: center;
+    height: 300px; 
 }
+.Projet DNS{
+    display: flex;
+    justify-content: center;
+    height: 300px; 
+}
+.Projet DHCP{
+    display: flex;
+    justify-content: center;
+    height: 300px; 
+}
+/*C.V*/
 .cv-img{
     margin-left: 400px;
 }
