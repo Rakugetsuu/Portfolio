@@ -4,198 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Allan ASSAILLY">
-    <meta name="description" content="Portefolio">
+    <meta name="description" content="Portfolio - Allan ASSAILLY">
     <link rel="stylesheet" href="main.css">
-    <title>Allan ASSAILLY</title>
+    <title>Allan ASSAILLY — Portfolio</title>
 </head>
 <body>
-    <header id="A propos de moi">
-        <div>
-            <div class="intro">
-                <div class="description">
-                    <h1 class="nom">Allan ASSAILLY</h1><!--A propos de moi-->
-                    <h1>Étudiant en 2ème année de BUT Réseaux et Télécommunications</h1>
-                        <h1>A propos de moi</h1>
-                        <p>J'ai 21 ans, je viens de Champeix dans le Puy de Dôme (63).</p>
+    <header class="site-header">
+        <nav class="topnav" aria-label="Navigation principale">
+            <div class="brand">Allan ASSAILLY</div>
+            <input id="menu-toggle" type="checkbox" aria-hidden="true">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">☰</label>
+            <ul class="menu">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#divers">Divers</a></li>
+                <li><a href="#cv">C.V</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-                        <p>Après mes 2 années de licence, j'ai découvert un interêt pour l'informatique et notamment pour la programmation. J'ai par la suite, après avoir rejoint ce BUT, trouvé que la création de réseau est très intéressante et passionnante.</p>
-                        <p>Je suis curieux, organisé et discret.</p>
-                        <p>Je suis à la recherche d'un stage de 10 semaines du 7 avril au 12 juin inclus.</p>
-                </div>
-                    <img src="Photo.jpg" alt="Photo">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="nom">Allan ASSAILLY</h1>
+                <p class="role">Étudiant en 2ème année de BUT Réseaux et Télécommunications</p>
+                <h2>À propos de moi</h2>
+                <p>J'ai 21 ans, je viens de Champeix dans le Puy-de-Dôme (63).</p>
+                <p>Après mes 2 années de licence, j'ai découvert un intérêt pour l'informatique et notamment pour la programmation. En rejoignant ce BUT, j'ai trouvé que la création et la gestion de réseaux sont passionnantes.</p>
+                <p>Je suis curieux, organisé et discret.</p>
+                <p>Je suis à la recherche d'un stage de 10 semaines du 7 avril au 12 juin inclus.</p>
+            </div>
+            <div class="hero-photo">
+                <img src="Photo.jpg" alt="Photo d'Allan ASSAILLY">
             </div>
         </div>
     </header>
+
     <main>
-        <nav>
-            <p>Allan ASSAILLY</p>
-            <ul>
-                <li><a href="#A propos de moi">A propos de moi</a></li>
-                <li><a href="#Formation">Formation</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Compétences">Compétences</a></li>
-                <li><a href="#Projets">Projets</a></li>
-                <li><a href="#Divers">Divers</a></li>
-                <li><a href="#C.V">C.V</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="Formation">
-            <h2>Formation</h2>
-            <div class="BUT">
-                <div class="descriptionBUT">
-                    <h3>BUT Réseaux et Télécommunications (CAMPUS des Cézeaux 63)</h3>
-                    <p>En cours</p>
-                    <p>J'apprends à faire et à entrenir un réseau informatique et de quelle manière les appareils communiquent entre eux.</p>
-                </div>
-                <img src="R&T.jpg" alt="IUT">
-            </div>
-            <div class="licence">
-                <div class="descriptionlicence">
-                    <h3>Licence Biologie/Géologie (CAMPUS des Cézeaux 63)</h3>
-                    <p>2021 – 2023</p>
-                    <p>Au cours de ces 2 années, j'en ai appris d'avantage sur la composition et l'évolution du vivant ainsi que sur celles de notre univers, donc notre planète.</p>
-                </div>
-                <img src="UCA.jpg" alt="UCA">
-            </div>
-            <div class="lycée">
-                <div class="descriptionlycée">
-                    <h3>Baccalauréat général (Lycée Murat 63)</h3>
-                    <p>2018 – 2021</p>
-                    <p>Durant mes années de lycée, j'ai obtenu mon baccalauréat avec mention assez bien avec comme spécialité Physique-chimie, SVT en terminal et Mathématiques en première.</p>
-                </div>
-                <img src="Lycée Murat.jpg" alt="Lycée Murat">
-            </div>
-        </section>
-        <section id="Experience">
-            <h2>Experience</h2>
-            <article>
-                <article>
-                    <div class="metal">
-                        <div class="description metal">
-                           <h3>Stage de métallurgie (Materials Explorers) | Lycée LaFayette Clermont-Ferrand (63)</h3>
-                            <p>Juin 2019</p>
-                            <h4>Contexte</h4>
-                            <p>Durant ma seconde j'ai participé pendant une semaine au programme Materials Explorers (stage de métallurgie) qui ce déroulait au lycée La Fayette à Clermont-Ferrand.</p>
-                            <p>Le stage regroupait plusieurs élèves dans toute la France ainsi que des mentors étrangés en majorité. Nous étions séparés en plusieurs équipes (5 personnes) avec pour chacune d'elles 1 ou 2 mentors (j'avais un mentor américain ainsi qu'un français).</p>
-                            <h4>Objectif</h4>
-                            <p>J'ai voulu participer à ce stage pour en apprendre plus sur la métallurgie car je suis passionné de chimie. J'y suis allé avec mon ami ce qui m'a aidé à me motiver.</p>
-                            <h4>Travail réalisé</h4>
-                            <p>Nous avons étudié la composition d'une boule de pétanque afin de répertorier les matériaux qui la compose. Nous avons ensuite, à la fin de cette semaine de stage, fait un compte rendu oral en anglais devant les autres participants et leurs parents.</p>
-                            <h4>Résultats</h4>
-                            <p>Ce stage m'a permis de m'habituer au travail en équipe, d'améliorer ma capacité d'adaptation ainsi que mes compétences en anglais.</p>
+        <section id="formation" class="section">
+            <div class="container">
+                <h2>Formation</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="R&T.jpg" alt="BUT Réseaux et Télécommunications">
+                        <div class="card-body">
+                            <h3>BUT Réseaux et Télécommunications (CAMPUS des Cézeaux 63)</h3>
+                            <p><strong>Période :</strong> 2024 – En cours</p>
+                            <p>J'apprends à mettre en place et entretenir un réseau informatique et à comprendre comment les appareils communiquent entre eux.</p>
                         </div>
-                        <img src="Materials explo.jpg" alt="Materials Explorers">
-                    </div>
-                </article>
-                <article>
-                    <div class="magazin">
-                        <div class="description magazin">
-                            <h3>Caissier | Intermarché Champeix (63)</h3>
-                            <p>Eté 2024</p>
-                            <h4>Contexte :</h4>
-                            <p>Je n'avais jamais exercé le travail de caissier, on m'a donc confié à quelqu'un en poste depuis plusieurs années pour m'apprendre le travail et pour me surveiller.</p>
-                            <h4>Objectif :</h4>
-                            <p>J'ai voulu travailler dans cette entreprise pour aider mes parents dans le financement de mes études ainsi que pour la proximité du lieu qui ce situe à 5 minutes à pieds de chez eux.</p>
-                            <h4>Travail réalisé</h4>
-                            <p>Pendant cette période d'un mois, j'ai principalement tenu la caisse mais lorsqu'il y avait moins de monde, je faisais de la mise en rayon.</p>
-                            <h4>Résultats</h4>
-                            <p>Grâce à ce travail, j'ai renforcé ma capacité à intéragir et à conseiller des personnes de tous âges. A la fin de mon contrat, les patrons m'ont proposé de travailler pendant les prochaines vacances d'été ainsi que les week-end, et même durant toute l'année scolaire si je n'étais pas accepté dans la formation que je désirais.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="UCA.jpg" alt="Licence Biologie/Géologie">
+                        <div class="card-body">
+                            <h3>Licence Biologie/Géologie (CAMPUS des Cézeaux 63)</h3>
+                            <p><strong>Période :</strong> 2021 – 2023</p>
+                            <p>Au cours de ces 2 années, j'ai approfondi mes connaissances sur la composition et l'évolution du vivant et de notre planète.</p>
                         </div>
-                        <img src="intermarche-logo-900x430.jpg" alt="Magasin">
-                    </div>
-                </article>
-        </section>
-        <section id="Compétences">
-            <h2>Compétences</h2>
-            <div class="soustitre">
-                <h3><u>Compétences techniques</u></h3>
-            </div>
-            <div class="compétencestec">
-                <div class="réseau">
-                    <h3>Réseaux</h3>
-                    <p>Je sais mettre en place un réseau internet, que ce soit filaire ou Wi-Fi.</p>
-                    <p>17/20</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="Lycée Murat.jpg" alt="Baccalauréat">
+                        <div class="card-body">
+                            <h3>Baccalauréat général (Lycée Murat 63)</h3>
+                            <p><strong>Période :</strong> 2018 – 2021</p>
+                            <p>Obtenu avec mention assez bien. Spécialités : Physique-chimie, SVT, Mathématiques.</p>
+                        </div>
+                    </article>
                 </div>
-                <div class="programmation">
-                    <h3>Programmation</h3>
-                    <p>Je sais créer un programme sous Python et sur Linux. Je sais également faire une page internet.</p>
-                    <p>14/20</p>
-                </div>
-            </div>
-            <div class="soustitre">
-                <h3><u>Compétences humaine</u></h3>    <!--A finir-->
-            </div>
-            <div class="compétenceshum">
-                <div class="mancur">
-                    <div class="manuel">
-                        <h3>Manuel</h3>
-                        <p>Je suis manuel parce que j’apprécie le travail concret qui me permet de créer les choses par moi-même</p>
-                    </div>
-                    <div class="curieux">
-                        <h3>Curieux</h3>
-                        <p>Je suis curieux parce que j’ai soif de découvertes et de compréhension du monde qui m’entoure</p>
-                    </div>
-                </div>
-                <div class="organisé">
-                    <h3>Organisé</h3>
-                    <p>Je suis organisé parce que cela me permet de rester efficace, concentré et d’accomplir mes objectifs</p>
-                </div>
-            </div>
-        </section>
-        <section id="Projets">
-            <h2>Projets</h2>
-            <div class="Projet">
-                <div class="Projet init-rés">
-                    <a class="cv-ouvrir" href="Projet init-réseaux (DS).pdf" target="_blank"><img class="init-img" src="capture projet.jpg" alt="Projet"></a>
-                </div>
-                <div class="Projet DNS">
-                    <a class="cv-ouvrir" href="Projet Service DNS.pdf" target="_blank"><img class="init-img" src="Capture Projet DNS.PNG" alt="Projet"></a>
-                </div>
-                <div class="Projet DHCP">
-                    <a class="cv-ouvrir" href="Projet Service DHCP.pdf" target="_blank"><img class="init-img" src="Capture Projet DHCP.png" alt="Projet"></a>
-                </div>
-            </div>
-        </section>
-        <section id="Divers">
-            <h2>Divers</h2>
-            <div class="divers">
-                <div class="muslec">
-                    <div class="musique">
-                        <h3>Musique</h3>
-                        <p>J'écoute de la musique le plus possible, que ce soit en jouant, lisant, marchant, travaillant.</p>
-                        <p>J'aime tout les styles de musique mais j'ai un petit faible pour le métal notamment pour le groupe Lacuna Coil</p>
-                        <img src="Lacuna Coil.jpg" alt="Lacuna Coil">
-                    </div>
-                    <div class="lecture"> 
-                        <h3>Lecture</h3>
-                        <p>J'aime lire et notamment des mangas. Mon manga préféré est Darwin's Game</p>
-                        <img src="Darwin-s-Game-T01.jpg" alt="Darwin's Game">
-                    </div>
-                </div>
-                <div class="marche">
-                    <h3>Marche</h3>
-                    <p>Lorsque je rentre chez mes parents environ toutes les 3 semaines, j'aime bien aider mes parents à promener leurs chiens sur</p>
-                    <p>des promenades de 3 heures en forêt, en montagne ou en bordure de lacs (je suis derrière l'appareil)</p>
-                    <img src="photo chien.jpg" alt="Photo chien">
-                </div>
-            </div>
-        </section>
-        <section id="C.V">
-            <h2>C.V</h2>
-            <a class="cv-ouvrir" href="C.V.pdf" target="_blank"><img class="cv-img" src="C.V.jpg" alt="CV"></a>
-        </section>
-        <section id="Contact">
-            <h2>Contact</h2>
-            <div class="contact">
-                <h3>E-mail</h3>
-                <p>allan.assailly@etu.uca.fr</p>
             </div>
         </section>
 
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Expérience</h2>
+                <div class="cards vertical">
+                    <article class="card">
+                        <img src="Materials explo.jpg" alt="Materials Explorers">
+                        <div class="card-body">
+                            <h3>Stage de métallurgie (Materials Explorers) | Lycée LaFayette Clermont-Ferrand (63)</h3>
+                            <p><em>Juin 2019</em></p>
+                            <h4>Contexte</h4>
+                            <p>Participation d'une semaine au programme Materials Explorers au lycée La Fayette (Clermont-Ferrand), travail en équipe et présentations en anglais.</p>
+                            <h4>Objectif</h4>
+                            <p>Approfondir mes connaissances en métallurgie et chimie.</p>
+                            <h4>Travail réalisé</h4>
+                            <p>Étude de la composition d'une boule de pétanque, restitution orale en anglais.</p>
+                            <h4>Résultats</h4>
+                            <p>Meilleure capacité de travail en équipe, adaptation et anglais amélioré.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="intermarche-logo-900x430.jpg" alt="Intermarché Champeix">
+                        <div class="card-body">
+                            <h3>Caissier | Intermarché Champeix (63)</h3>
+                            <p><em>Été 2024</em></p>
+                            <h4>Contexte</h4>
+                            <p>Formation sur le poste par un employé expérimenté.</p>
+                            <h4>Objectif</h4>
+                            <p>Aider au financement des études et travailler proche du domicile.</p>
+                            <h4>Travail réalisé</h4>
+                            <p>Tenu de caisse et mise en rayon.</p>
+                            <h4>Résultats</h4>
+                            <p>Renforcement des compétences relationnelles et proposition de poursuivre le contrat.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <div class="container">
+                <h2>Compétences</h2>
+                <div class="skills">
+                    <div class="skills-row">
+                        <div class="panel">
+                            <h3>Compétences techniques</h3>
+                            <ul>
+                                <li><strong>Réseaux :</strong> Mise en place de réseaux filaires et Wi‑Fi — 17/20</li>
+                                <li><strong>Programmation :</strong> Python, environnement Linux, création de pages web — 14/20</li>
+                            </ul>
+                        </div>
+
+                        <div class="panel">
+                            <h3>Compétences humaines</h3>
+                            <ul>
+                                <li><strong>Manuel :</strong> Apprécie le travail concret et la réalisation d'objets.</li>
+                                <li><strong>Curieux :</strong> Soif de découvertes et de compréhension.</li>
+                                <li><strong>Organisé :</strong> Efficacité et respect des objectifs.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-row single">
+                        <div class="panel">
+                            <h3>Compétences linguistiques</h3>
+                            <ul>
+                                <li><strong>Anglais :</strong> Niveau A2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <div class="container">
+                <h2>Projets</h2>
+                <div class="cards">
+                    <article class="card project">
+                        <a href="Projet init-réseaux (DS).pdf" target="_blank" class="project-link">
+                            <img src="capture projet.jpg" alt="Projet init-réseaux">
+                            <div class="card-body"><h3>Projet init‑réseaux (DS)</h3></div>
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <a href="Projet Service DNS.pdf" target="_blank" class="project-link">
+                            <img src="Capture Projet DNS.PNG" alt="Projet DNS">
+                            <div class="card-body"><h3>Projet Service DNS</h3></div>
+                        </a>
+                    </article>
+
+                    <article class="card project">
+                        <a href="Projet Service DHCP.pdf" target="_blank" class="project-link">
+                            <img src="Capture Projet DHCP.png" alt="Projet DHCP">
+                            <div class="card-body"><h3>Projet Service DHCP</h3></div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="divers" class="section">
+            <div class="container">
+                <h2>Divers</h2>
+                <div class="grid-3">
+                    <div class="panel">
+                        <h3>Musique</h3>
+                        <p>J'écoute de la musique le plus possible. J'ai un faible pour le métal, notamment Lacuna Coil.</p>
+                        <img src="Lacuna Coil.jpg" alt="Lacuna Coil">
+                    </div>
+                    <div class="panel">
+                        <h3>Lecture</h3>
+                        <p>J'aime lire, notamment des mangas. Mon préféré est Darwin's Game.</p>
+                        <img src="Darwin-s-Game-T01.jpg" alt="Darwin's Game">
+                    </div>
+                    <div class="panel">
+                        <h3>Marche</h3>
+                        <p>Promenades en forêt/montagne avec les chiens de mes parents (sorties de ~3 heures).</p>
+                        <img src="photo chien.jpg" alt="Promenade chien">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <div class="container center">
+                <h2>C.V</h2>
+                <a class="cv-link" href="C.V.pdf" target="_blank">
+                    <img src="C.V.jpg" alt="C.V">
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container center">
+                <h2>Contact</h2>
+                <p>Email : <a href="mailto:allan.assailly@etu.uca.fr">allan.assailly@etu.uca.fr</a></p>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy;</p>
+
+    <footer class="site-footer">
+        <div class="container center">
+            <p>© Allan ASSAILLY</p>
+        </div>
     </footer>
-    </body>
+</body>
 </html>
