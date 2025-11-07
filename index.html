@@ -12,8 +12,8 @@
     <header class="site-header">
         <nav class="topnav" aria-label="Navigation principale">
             <div class="brand">Allan ASSAILLY</div>
-            <button type="button" class="menu-icon" aria-expanded="false" aria-label="Menu">☰</button>
-            <ul class="menu" id="navigation-menu">
+            <button class="menu-icon" aria-label="Menu">☰</button>
+            <ul class="menu">
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#formation">Formation</a></li>
                 <li><a href="#experience">Expérience</a></li>
@@ -288,47 +288,27 @@
         </div>
         </footer>
         <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                const menuButton = document.querySelector('.menu-icon');
-                const menu = document.getElementById('navigation-menu');
-                let isMenuOpen = false;
-
-                // Fonction pour ouvrir/fermer le menu
-                function toggleMenu() {
-                    isMenuOpen = !isMenuOpen;
-                    menu.classList.toggle('is-open', isMenuOpen);
-                    menuButton.setAttribute('aria-expanded', isMenuOpen);
-                }
-
-                // Fonction pour fermer le menu
-                function closeMenu() {
-                    isMenuOpen = false;
-                    menu.classList.remove('is-open');
-                    menuButton.setAttribute('aria-expanded', 'false');
-                }
-
-                // Gestionnaire de clic sur le bouton menu
-                menuButton.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    toggleMenu();
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.menu-icon');
+                const menu = document.querySelector('.menu');
+                
+                // Toggle menu when clicking the menu button
+                menuBtn.addEventListener('click', function() {
+                    menu.classList.toggle('is-open');
                 });
-
-                // Fermer le menu quand on clique sur un lien
-                menu.querySelectorAll('a').forEach(function(link) {
-                    link.addEventListener('click', closeMenu);
+                
+                // Close menu when clicking a link
+                const links = document.querySelectorAll('.menu a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        menu.classList.remove('is-open');
+                    });
                 });
-
-                // Fermer le menu si on clique en dehors
+                
+                // Close menu when clicking outside
                 document.addEventListener('click', function(e) {
-                    if (isMenuOpen && !menu.contains(e.target) && e.target !== menuButton) {
-                        closeMenu();
-                    }
-                });
-
-                // Fermer le menu avec la touche Échap
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && isMenuOpen) {
-                        closeMenu();
+                    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        menu.classList.remove('is-open');
                     }
                 });
             });
