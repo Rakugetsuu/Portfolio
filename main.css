@@ -39,27 +39,41 @@ body {
 .menu-icon { display: none; cursor: pointer; margin-left: auto; color: #fff; font-size: 1.5rem; }
 
 @media (max-width: 800px) {
-  /* On mobile, ne pas fixer la barre en haut : laisser la nav dans le flux
-     afin qu'elle pousse le contenu lorsqu'elle s'ouvre (évite de cacher une
-     partie de l'écran). */
-  body { padding-top: 0; }
-  .topnav { position: static; }
+  /* Mobile: barre fixe contenant le nom + icône menu. Le menu se déplie
+     sous la barre quand on clique dessus (dropdown). */
+  :root { --topnav-height: 56px; }
+  body { padding-top: var(--topnav-height); }
+  .topnav { position: fixed; top: 0; left: 0; right: 0; height: var(--topnav-height); display: flex; align-items: center; padding: 0 1rem; }
 
+  /* Menu déroulant sous la barre (overlay partiel mais visible). */
   .menu {
-    position: static;
-    right: auto;
-    top: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--topnav-height);
     background: #0b3b5b;
     flex-direction: column;
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0;
     border-radius: 0 0 8px 8px;
     display: none;
     width: 100%;
-    margin-top: 0.5rem;
-    box-shadow: 0 6px 18px rgba(16,24,32,0.06);
+    box-shadow: 0 8px 20px rgba(11,59,91,0.12);
+    max-height: calc(100vh - var(--topnav-height));
+    overflow: auto;
+    z-index: 60;
   }
+
+  /* Afficher le menu quand la checkbox est cochée */
   #menu-toggle:checked + .menu-icon + .menu { display: flex; }
   .menu-icon { display: block; }
+
+  /* Liens du menu en pleine largeur */
+  .topnav .menu { gap: 0; }
+  .topnav .menu li a { padding: 0.9rem 1rem; width: 100%; text-align: left; }
+  .topnav .brand { font-size: 1rem; }
+
+  /* Amélioration tactile : agrandir la zone du label (icône) */
+  .menu-icon { padding: 0.4rem; }
 }
 
 .hero { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; align-items: center; padding: 2rem 1.5rem; }
