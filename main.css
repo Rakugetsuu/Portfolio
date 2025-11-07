@@ -78,8 +78,8 @@ body {
     z-index: 49;
   }
 
-  /* Activer le menu quand la checkbox est cochée */
-  #menu-toggle:checked ~ .menu {
+  /* Menu ouvert */
+  .menu.is-open {
     display: flex;
   }
 
