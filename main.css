@@ -48,11 +48,14 @@ body {
   }
   .topnav {
     padding: 0.8rem 1rem;
+    justify-content: space-between;
+  }
+  /* Cacher les liens de la barre sur mobile */
+  .topnav .menu {
+    display: none;
   }
   .menu-icon {
-    position: absolute;
-    right: 1rem;
-    top: 0.8rem;
+    position: relative;
     background: none;
     border: none;
     color: white;
@@ -61,8 +64,9 @@ body {
     padding: 0.3rem 0.5rem;
     display: block;
   }
-  .menu {
-    display: none;
+  /* Menu déroulant */
+  .menu.is-open {
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -72,17 +76,14 @@ body {
     list-style: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
-  .menu.is-open {
-    display: block;
-  }
-  .menu a {
+  .menu.is-open a {
     color: white;
     text-decoration: none;
     padding: 1rem;
     display: block;
     border-top: 1px solid rgba(255,255,255,0.1);
   }
-  .menu a:hover {
+  .menu.is-open a:hover {
     background: rgba(255,255,255,0.1);
   }
 }
