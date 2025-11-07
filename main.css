@@ -39,41 +39,66 @@ body {
 .menu-icon { display: none; cursor: pointer; margin-left: auto; color: #fff; font-size: 1.5rem; }
 
 @media (max-width: 800px) {
-  /* Mobile: barre fixe contenant le nom + icône menu. Le menu se déplie
-     sous la barre quand on clique dessus (dropdown). */
+  /* Mobile: barre fixe contenant le nom + icône menu */
   :root { --topnav-height: 56px; }
   body { padding-top: var(--topnav-height); }
-  .topnav { position: fixed; top: 0; left: 0; right: 0; height: var(--topnav-height); display: flex; align-items: center; padding: 0 1rem; }
+  
+  /* Barre de navigation fixe */
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--topnav-height);
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
 
-  /* Menu déroulant sous la barre (overlay partiel mais visible). */
+  /* Bouton menu */
+  .menu-icon {
+    display: block;
+    padding: 0.8rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  /* Menu déroulant */
   .menu {
-    position: absolute;
+    display: none;
+    position: fixed;
     left: 0;
     right: 0;
     top: var(--topnav-height);
     background: #0b3b5b;
     flex-direction: column;
-    padding: 0.25rem 0;
-    border-radius: 0 0 8px 8px;
-    display: none;
     width: 100%;
-    box-shadow: 0 8px 20px rgba(11,59,91,0.12);
-    max-height: calc(100vh - var(--topnav-height));
-    overflow: auto;
-    z-index: 60;
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(11,59,91,0.15);
+    z-index: 49;
   }
 
-  /* Afficher le menu quand la checkbox est cochée */
-  #menu-toggle:checked + .menu-icon + .menu { display: flex; }
-  .menu-icon { display: block; }
+  /* Activer le menu quand la checkbox est cochée */
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
 
-  /* Liens du menu en pleine largeur */
-  .topnav .menu { gap: 0; }
-  .topnav .menu li a { padding: 0.9rem 1rem; width: 100%; text-align: left; }
-  .topnav .brand { font-size: 1rem; }
-
-  /* Amélioration tactile : agrandir la zone du label (icône) */
-  .menu-icon { padding: 0.4rem; }
+  /* Style des liens */
+  .topnav .menu {
+    gap: 0;
+    margin: 0;
+  }
+  .topnav .menu li {
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .topnav .menu li a {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav .brand {
+    font-size: 1.1rem;
+  }
 }
 
 .hero { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; align-items: center; padding: 2rem 1.5rem; }
