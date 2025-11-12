@@ -503,3 +503,27 @@ img {
   display: block;
 }
 
+/* ============================================
+   Ajustements spécifiques pour petits écrans
+   - Rend la zone C.V plus adaptée sur téléphone
+   ============================================ */
+@media (max-width: 480px) {
+  /* Le lien CV prend la largeur disponible (avec marge) et est centré */
+  .cv-link {
+    max-width: 90%;
+    width: 90%;
+    display: block;
+    margin: 0.6rem auto; /* centré horizontalement */
+  }
+
+  /* L'image du CV remplit son conteneur, sans transformation au survol */
+  .cv-link img {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  /* Éviter les effets hover sur petits écrans */
+  .cv-link:hover { transform: none; }
+}
+
