@@ -165,6 +165,26 @@ body {
 .panel ul { list-style: disc; margin: 0.6rem 0 0.6rem 1.25rem; padding-left: 0.35rem; line-height: 1.45; }
 .panel ul li { margin-bottom: .45rem; }
 
+/* CV link hover effect - similar to project cards */
+.cv-link {
+  display: inline-block;
+  transition: transform 200ms ease;
+}
+.cv-link:hover {
+  transform: scale(1.05);
+}
+.cv-link img {
+  transition: transform 220ms ease;
+}
+.cv-link:hover img {
+  transform: scale(1.05);
+}
+
+/* Disable hover transform on touch devices that don't support hover */
+@media (hover: none) {
+  .cv-link, .cv-link img { transition: none; transform: none; }
+}
+
 /* Accessibility focus */
 a:focus { outline: 3px solid rgba(11,59,91,0.18); outline-offset: 2px; }
 
