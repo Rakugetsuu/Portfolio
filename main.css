@@ -223,9 +223,34 @@ body {
   gap: 1rem;
 }
 
+/* Centre les cartes isolées sur leur propre ligne */
+.cards .card.centered {
+  justify-self: center;
+  max-width: 320px;
+  width: 100%;
+}
+
 /* Cartes avec alignement vertical (ex: Expérience) */
 .cards.vertical { 
   align-items: stretch;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  justify-content: center;
+  justify-items: stretch;
+  max-width: calc(4 * 280px + 3 * 1rem);
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .cards.vertical {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    max-width: calc(2 * 280px + 1 * 1rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .cards.vertical {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Chaque carte */
